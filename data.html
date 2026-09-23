@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang='el'>
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+    <title>E-Apousiologio Data</title>
+</head>
+<body>
+    <div class="layout-wrapper">
+        
+        <!-- Left Side: Existing Data Container -->
+        <div class="data-container">
+            <h2 class="heading" style="text-align: left; margin-bottom: 20px;">Δεδομένα Απουσιολογίου</h2>
+            
+            <div id="urlWarning" style="display: none; color: red; margin-bottom: 15px; font-weight: bold;">
+                ⚠️ Προσοχή: Ανοίξτε τη σελίδα μέσω του server στο <a href="http://192.168.1.12/data.html">Local Host</a>
+            </div>
+
+            <table id="dataTable">
+                <thead>
+                    <tr>
+                        <th>ID <br><input type="text" class="search-input" onkeyup="runAllFilters()" placeholder="Αναζήτηση..."></th>
+                        <th>Όνομα <br><input type="text" class="search-input" onkeyup="runAllFilters()" placeholder="Αναζήτηση..."></th>
+                        <th>Επώνυμο <br><input type="text" class="search-input" onkeyup="runAllFilters()" placeholder="Αναζήτηση..."></th>
+                        <th>Τμήμα <br><input type="text" class="search-input" onkeyup="runAllFilters()" placeholder="Αναζήτηση..."></th>
+                        <th>Ώρα <br><input type="text" class="search-input" onkeyup="runAllFilters()" placeholder="Αναζήτηση..."></th>
+                    </tr>
+                </thead>
+                <tbody id="tableBody">
+                    <!-- Data will be inserted here dynamically -->
+                </tbody>
+            </table>
+        </div>
+
+        <!-- Right Side: Calendar Filter -->
+        <div class="calendar-container">
+            <h3>Ημερομηνία</h3>
+            <input type="date" id="dateFilter" class="calendar-date-input" onchange="runAllFilters()">
+            <button class="calendar-clear-btn" onclick="clearDateFilter()">Καθαρισμός</button>
+        </div>
+
+    </div>
+
+    <script src="data.js"></script>
+</body>
+</html>

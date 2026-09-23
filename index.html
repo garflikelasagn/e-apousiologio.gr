@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang='el'>
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="indexstyle.css">
+    <title>E-Apousiologio</title>
+</head>
+<body>
+    <!-- Top Right Login Button -->
+    <button id="loginBtn" class="top-right-login login-button">Log In</button>
+
+    <!-- Login Modal -->
+    <div id="loginModal" class="modal">
+        <div class="modal-content container">
+            <span class="close">&times;</span>
+            <div class="heading">Admin Login</div>
+            <div class="form">
+                <input class="input" type="text" id="adminUser" placeholder="Username">
+                <input class="input" type="password" id="adminPass" placeholder="Password">
+                <button id="adminSubmit" class="login-button">Submit</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Main Form Container -->
+    <div class="container">
+        <div class="heading">E-Απουσιολόγιο In</div>
+        <form id="addNoteForm" class="form">
+            <input required="" class="input" type="text" id="firstName" placeholder="Όνομα">
+            <input required="" class="input" type="text" id="lastName" placeholder="Επώνυμο">
+            <input required="" class="input" type="text" id="tmima" placeholder="Τμήμα">
+            <!-- Added Submit Button here -->
+            <button type="submit" class="login-button">Submit</button>
+        </form>
+    </div>
+
+    <script src="login.js"></script>
+</body>
+</html>

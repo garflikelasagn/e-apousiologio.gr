@@ -1,0 +1,148 @@
+/* Top Right Button */
+.top-right-login {
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    width: 120px !important;
+    margin: 0 !important;
+    padding-block: 10px !important;
+}
+
+/* Modal Background */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.5);
+}
+
+/* Modal Content Box */
+.modal-content {
+    margin: 15% auto;
+    position: relative;
+}
+
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.close:hover {
+    color: black;
+}
+
+/* Data Table Styles */
+.data-container {
+    background: white;
+    padding: 30px;
+    border-radius: 20px;
+    box-shadow: rgba(133, 189, 215, 0.8784313725) 0px 30px 30px -20px;
+    margin: 40px auto;
+    max-width: 900px;
+    font-family: sans-serif;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th, td {
+    padding: 12px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+th {
+    background-color: #f4f7fb;
+    color: rgb(16, 137, 211);
+}
+
+.search-input {
+    width: 90%;
+    margin-top: 5px;
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+/* Flex Layout for Data and Calendar */
+.layout-wrapper {
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+    padding: 40px;
+    align-items: flex-start;
+    font-family: sans-serif;
+}
+
+/* Override existing data-container margin for flexbox */
+.layout-wrapper .data-container {
+    margin: 0; 
+    flex: 1;
+    max-width: 900px;
+}
+
+/* Calendar Filter Styles */
+.calendar-container {
+    background: linear-gradient(180deg, #F8F9FD 0%, #FFFFFF 100%);
+    border: rgb(16, 137, 211) 5px solid;
+    border-radius: 40px;
+    padding: 30px;
+    box-shadow: rgba(133, 189, 215, 0.4) 0px 30px 40px -10px;
+    width: 300px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.calendar-container h3 {
+    font-size: 24px;
+    color: rgb(16, 137, 211);
+    margin-bottom: 20px;
+    font-weight: 900;
+}
+
+.calendar-date-input {
+    width: 100%;
+    padding: 12px;
+    font-size: 16px;
+    border-radius: 15px;
+    border: 2px solid #cff0ff;
+    outline: none;
+    margin-bottom: 15px;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+.calendar-clear-btn {
+    width: 100%;
+    background-color: rgb(16, 137, 211);
+    color: white;
+    padding: 12px;
+    font-size: 16px;
+    font-weight: bold;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    box-sizing: border-box;
+    box-shadow: rgba(16, 137, 211, 0.4) 0px 10px 20px -5px;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.calendar-clear-btn:hover {
+    transform: scale(1.03);
+    box-shadow: rgba(16, 137, 211, 0.6) 0px 15px 25px -5px;
+}
+
+.calendar-clear-btn:active {
+    transform: scale(0.95);
+}
